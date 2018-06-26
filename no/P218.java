@@ -1,4 +1,4 @@
-public class P218 {
+public class Student {
     /**
      * Declare two public attributes name(string) and score(int).
      */
@@ -20,7 +20,7 @@ public class P218 {
      * Declare a constructor expect a name as a parameter.
      */
     // write your code here
-     public P128(String name) {
+     public Student(String name) {
         this.name = name;
     }
     
