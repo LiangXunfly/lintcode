@@ -23,8 +23,8 @@ public class P452 {
         }
         ListNode temp = head;
         //先把除头Node之外的符合Node删除
-        while (temp != null && temp.next != null) {
-            if (temp.val == val) {
+        while (temp.next != null) {
+            if (temp.next.val == val) {
                 temp.next = temp.next.next;
             }
             else {
