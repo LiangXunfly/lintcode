@@ -1,3 +1,5 @@
+package no;
+
 public class P214 {
     /**
      * @param A: An integer
