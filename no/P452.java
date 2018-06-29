@@ -37,8 +37,4 @@ public class P452 {
         }
         return head;
     }
-
-    public static void main(string[] args) {
-
-    }
 }
