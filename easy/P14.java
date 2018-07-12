@@ -27,5 +27,28 @@ public class Solution {
 	        }
 	    }
 	    return result;
+
+
+	    int length = nums.length;
+        if (length == 0) {
+            return -1;
+        }
+        int start = 0;
+        int end = length - 1;
+        int result = -1;
+        while (start <= end) {
+            int middle = (end - start) / 2 + start;
+            if (target > nums[middle]) {
+                start = middle + 1;
+            }
+            else if (target == nums[middle]) {
+                result = middle;
+                end = middle - 1;
+            }
+            else {
+                end = middle - 1;
+            }
+        }
+        return result;
     }
 }
